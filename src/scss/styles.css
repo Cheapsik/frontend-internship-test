@@ -41,4 +41,108 @@ body {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
 }
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 300px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.popup .content {
+  width: 220px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup .content h1 {
+  font-family: 'Lobster', sans-serif;
+}
+
+.popup .content .input-popup {
+  width: 186px;
+  padding: 15px;
+  margin: 0 0 20px 0;
+}
+
+.popup .content .checkbox-container {
+  margin: 0;
+  font-size: 15.5px;
+}
+
+.popup .content .checkbox-container .popup-checkbox {
+  margin: 0 10px 0 0;
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.close-btn p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.popup-submit-btn {
+  min-width: 100%;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.popup-submit-btn:hover {
+  background-color: #fc888e;
+}
 /*# sourceMappingURL=styles.css.map */

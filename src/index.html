@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="scss/styles.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="scss/styles.css" />
     <title>Virtua Frontend Internship Test</title>
   </head>
   <body>
     <section class="main">
-      <button id="show-popup-form" class="btn btn-main">Click me!</button>
-      <p style="display: none">Thank you!</p> 
+      <button id="show-popup-form" class="btn btn-main" onclick="showPopup()">
+        Click me!
+      </button>
+      <p style="display: none">Thank you!</p>
     </section>
     <div class="popup">
-      <div class="close-btn">&#215;</div>
+      <div class="close-btn"><p>&#215;</p></div>
       <div class="content">
         <h1>Login</h1>
-        <input type="text" placeholder="E-mail">
-        <input type="password" placeholder="Password">
-        <input type="checkbox" class="popup-checkbox" id="terms"><label for="terms">I agree to terms & conditions.</label>
-        <button>Submit</button>
+        <input type="text" placeholder="E-mail" class="input-popup" />
+        <input type="password" placeholder="Password" class="input-popup" />
+        <div class="checkbox-container">
+          <input type="checkbox" class="popup-checkbox" id="terms" /><label
+            for="terms"
+            >I agree to terms & conditions.</label
+          >
+        </div>
+        <button class="popup-submit-btn">Submit</button>
       </div>
     </div>
     <script src="js/index.min.js" charset="utf-8"></script>
