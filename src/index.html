@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="scss/styles.css">
     <title>Virtua Frontend Internship Test</title>
   </head>
   <body>
     <section class="main">
       <button id="show-popup-form" class="btn btn-main">Click me!</button>
-      <!-- Display success message below -->
+      <p style="display: none">Thank you!</p> 
     </section>
     <div class="popup">
-      <!-- Here goes your popup form HTML code -->
+      <div class="close-btn">&#215;</div>
+      <div class="content">
+        <h1>Login</h1>
+        <input type="text" placeholder="E-mail">
+        <input type="password" placeholder="Password">
+        <input type="checkbox" class="popup-checkbox" id="terms"><label for="terms">I agree to terms & conditions.</label>
+        <button>Submit</button>
+      </div>
     </div>
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>
