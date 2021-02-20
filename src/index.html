@@ -22,23 +22,37 @@
       <button id="show-popup-form" class="btn btn-main" onclick="showPopup()">
         Click me!
       </button>
-      <p style="display: none">Thank you!</p>
+      <p class="text-after-form">Thank you!</p>
     </section>
     <div class="popup">
       <div class="close-btn"><p>&#215;</p></div>
       <div class="content">
         <h1>Login</h1>
-        <input type="text" placeholder="E-mail" class="input-popup" />
-        <input type="password" placeholder="Password" class="input-popup" />
+        <input
+          type="text"
+          placeholder="E-mail"
+          class="input-popup email"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="input-popup pass"
+          required
+        />
         <div class="checkbox-container">
-          <input type="checkbox" class="popup-checkbox" id="terms" /><label
-            for="terms"
-            >I agree to terms & conditions.</label
-          >
+          <input
+            type="checkbox"
+            class="popup-checkbox"
+            id="terms"
+            required
+          /><label for="terms">I agree to terms & conditions.</label>
         </div>
-        <button class="popup-submit-btn">Submit</button>
+        <button class="popup-submit-btn" onclick="submitFunction();">
+          Submit
+        </button>
       </div>
     </div>
-    <script src="js/index.min.js" charset="utf-8"></script>
+    <script src="js/index.js" charset="utf-8"></script>
   </body>
 </html>

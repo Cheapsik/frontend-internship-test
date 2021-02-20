@@ -42,6 +42,10 @@ body {
           transform: scale(1.15);
 }
 
+.active {
+  display: block;
+}
+
 .popup {
   position: fixed;
   top: 50%;
@@ -59,6 +63,7 @@ body {
   background-color: white;
   border-radius: 6px;
   z-index: 1;
+  display: none;
 }
 
 .popup .content {
@@ -87,6 +92,9 @@ body {
   width: 186px;
   padding: 15px;
   margin: 0 0 20px 0;
+  border: 1px solid black;
+  border-radius: 0;
+  outline: none;
 }
 
 .popup .content .checkbox-container {
@@ -96,6 +104,31 @@ body {
 
 .popup .content .checkbox-container .popup-checkbox {
   margin: 0 10px 0 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid black;
+  width: 13px;
+  height: 13px;
+  outline: none;
+  position: relative;
+}
+
+.popup .content .checkbox-container .popup-checkbox:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.popup .content .checkbox-container .popup-checkbox:checked:after {
+  display: block;
 }
 
 .close-btn {
@@ -140,9 +173,23 @@ body {
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
   text-transform: uppercase;
+  outline: none;
 }
 
 .popup-submit-btn:hover {
   background-color: #fc888e;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-after-form {
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+  height: 60px;
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
